@@ -26,7 +26,8 @@
 
                 <div>
                     <h2 class="clinic-name">The Dental Hub</h2>
-                   <small class="clinic-hindi-name">थे डेंटल हब</small>
+                    <small>Dr. Mohd. Wasil Khan</small>
+                   
                 </div>
             </a>
 
@@ -34,6 +35,8 @@
                 <a href="#home">Home</a>
                 <a href="#about">About</a>
                 <a href="#services">Services</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#appointment">Appointment</a>
                 <a href="#contact">Contact</a>
             </nav>
             <button class="menu-toggle" aria-label="Open menu">
@@ -106,7 +109,50 @@
 
 
     <!-- ABOUT -->
-    <section class="section" id="about">
+     <!-- DOCTOR SECTION -->
+<section class="section doctor-section" id="doctor">
+
+    <div class="container">
+
+        <span class="section-label">OUR DENTIST</span>
+
+        <div class="doctor-card">
+
+            <div class="doctor-photo">
+            <img src="Images/doctor-profile-photo.webp" alt="Dr. Mohd. Wasil Khan">
+            </div>
+
+            <div class="doctor-info">
+
+                <h2>Dr. Mohd. Wasil Khan</h2>
+
+                <p class="doctor-degree">
+                    BDS, MDS (Endodontics)
+                </p>
+
+                <p class="doctor-description">
+                    Professional dental care focused on healthy,
+                    comfortable and confident smiles.
+                </p>
+
+                <a href="https://www.instagram.com/thedentalhub.bly/"
+                   class="doctor-instagram"
+                   target="_blank"
+                   rel="noopener noreferrer">
+
+                    <i class="fa-brands fa-instagram"></i>
+                    @thedentalhub.bly
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+     <section class="section" id="about">
 
         <div class="container">
 
@@ -218,7 +264,139 @@
 
     </section>
 
+<!-- GALLERY SECTION -->
+<section class="section gallery-section" id="gallery">
 
+    <div class="container">
+
+        <span class="section-label">OUR DENTAL CASES</span>
+
+        <h2 style="
+    position: relative !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    width: max-content !important;
+    margin: 0 0 8px !important;
+    text-align: center !important;
+">
+    Dental Care Gallery
+</h2>
+        <p class="gallery-subtitle">
+            A glimpse of our dental care and treatment cases.
+        </p>
+
+        <div class="gallery-grid">
+
+            <div class="gallery-item">
+                <img src="Gallery/Gallery1.jpg" alt="Dental Clinic">
+            </div>
+
+            <div class="gallery-item">
+                <img src="Gallery/Gallery2.jpg" alt="Dental Treatment">
+            </div>
+
+            <div class="gallery-item">
+                <img src="Gallery/Gallery3.jpg" alt="Dental Treatment">
+            </div>
+
+            <div class="gallery-item">
+                <img src="Gallery/Gallery4.jpg" alt="Dental Clinic">
+            </div>
+
+            <div class="gallery-item">
+                <img src="Gallery/Gallery5.jpg" alt="Dental Treatment">
+            </div>
+
+            <div class="gallery-item">
+                <img src="Gallery/Gallery6.jpg" alt="Dental Clinic">
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+    <!-- APPOINTMENT SECTION -->
+<section class="section appointment" id="appointment">
+
+    <div class="container">
+
+        <span class="section-label">APPOINTMENT</span>
+
+        <h2>Book Your Appointment</h2>
+
+        <p class="appointment-subtitle">
+            Fill in your details and send your appointment request on WhatsApp.
+        </p>
+
+        <form id="appointmentForm" class="appointment-form">
+
+            <div class="form-group">
+                <label for="patientName">Your Name</label>
+                <input
+                    type="text"
+                    id="patientName"
+                    placeholder="Enter your name"
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="patientPhone">Mobile Number</label>
+                <input
+                    type="tel"
+                    id="patientPhone"
+                    placeholder="Enter your mobile number"
+                    required
+                >
+            </div>
+
+            <div class="form-row">
+
+                <div class="form-group">
+                    <label for="appointmentDate">Appointment Date</label>
+                    <input
+                        type="date"
+                        id="appointmentDate"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="appointmentTime">Preferred Time</label>
+                    <select id="appointmentTime" required>
+                        <option value="">Select time</option>
+                        <option value="10:00 AM - 11:00 AM">10:00 AM - 11:00 AM</option>
+                        <option value="11:00 AM - 12:00 PM">11:00 AM - 12:00 PM</option>
+                        <option value="12:00 PM - 1:00 PM">12:00 PM - 1:00 PM</option>
+                        <option value="1:00 PM - 2:00 PM">1:00 PM - 2:00 PM</option>
+                        <option value="5:00 PM - 6:00 PM">5:00 PM - 6:00 PM</option>
+                        <option value="6:00 PM - 7:00 PM">6:00 PM - 7:00 PM</option>
+                        <option value="7:00 PM - 8:00 PM">7:00 PM - 8:00 PM</option>
+                    </select>
+                </div>
+
+            </div>
+
+            <div class="form-group">
+                <label for="treatment">Reason for Visit</label>
+                <textarea
+                    id="treatment"
+                    rows="4"
+                    placeholder="Example: Tooth pain, consultation, cleaning..."
+                    required
+                ></textarea>
+            </div>
+
+            <button type="submit" class="appointment-btn">
+                📅 Book Appointment on WhatsApp
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
     <!-- CONTACT -->
     <section class="section contact" id="contact">
 

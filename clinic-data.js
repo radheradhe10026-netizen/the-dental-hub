@@ -11,11 +11,11 @@ const clinicData = {
 
 
     // CONTACT INFORMATION
-    phone: "070373 73728",
-    phoneLink: "07037373728",
-    whatsapp: "917037373728",
+   phone: "+91 70373 73728",
+phoneLink: "917037373728",
+whatsapp: "917037373728",
     email: "",
-
+        
 
     // ADDRESS & LOCATION
     address:

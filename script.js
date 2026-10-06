@@ -151,3 +151,37 @@ if (menuToggle && navLinks) {
         navLinks.classList.toggle("active");
     });
 }
+// ==========================================
+// APPOINTMENT BOOKING - WHATSAPP
+// ==========================================
+
+const appointmentForm = document.getElementById("appointmentForm");
+
+if (appointmentForm) {
+
+    appointmentForm.addEventListener("submit", function(event) {
+
+        event.preventDefault();
+
+        const name = document.getElementById("patientName").value.trim();
+        const phone = document.getElementById("patientPhone").value.trim();
+        const date = document.getElementById("appointmentDate").value;
+        const time = document.getElementById("appointmentTime").value;
+        const treatment = document.getElementById("treatment").value.trim();
+
+        const message =
+            "🦷 *New Appointment Request*%0A%0A" +
+            "👤 *Name:* " + encodeURIComponent(name) + "%0A" +
+            "📱 *Mobile:* " + encodeURIComponent(phone) + "%0A" +
+            "📅 *Date:* " + encodeURIComponent(date) + "%0A" +
+            "🕐 *Preferred Time:* " + encodeURIComponent(time) + "%0A" +
+            "🦷 *Reason:* " + encodeURIComponent(treatment);
+
+        const whatsappURL =
+            "https://wa.me/" + clinicData.whatsapp + "?text=" + message;
+
+        window.open(whatsappURL, "_blank");
+
+    });
+
+}
